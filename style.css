@@ -1,0 +1,77 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+  color: var(--espresso);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  padding-top: 70px;
+  /* Adjust this based on your navbar's actual height */
+}
+
+/* Ensure navbar is definitely on top */
+.fixed-top {
+  z-index: 1050;
+  /* Bootstrap default is 1030, this makes it extra safe */
+}
+
+.form-control-dark:focus {
+  background-color: white !important;
+  color: black !important;
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+section {
+  padding: 90px 0;
+  /* Consistent spacing for all sections */
+}
+
+#home {
+  /* This sets the height to 100% of the screen height */
+  min-height: 100vh;
+
+  /* Background styling */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://www.indiafoodnetwork.in/h-upload/2025/02/25/1484691-pretty-cafes-cover.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Centering the content vertically */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Ensure headings are visible against the image */
+#home h1,
+#home .lead {
+  color: white !important;
+}
+
+#home img {
+  border-radius: 5%;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  /* Matches your yellow/gold theme */
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
